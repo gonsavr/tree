@@ -1,3 +1,0 @@
-C:/Users/lenzer/CLionProjects/treeC++/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/lenzer/CLionProjects/treeC++/cmake-build-debug/CMakeFiles/treeC__.dir
-C:/Users/lenzer/CLionProjects/treeC++/cmake-build-debug/CMakeFiles/rebuild_cache.dir
