@@ -43,20 +43,6 @@ private:
 
     struct tree_elem* find(int value) { return find(value, root); }
 
-    struct tree_elem* find(int value, struct tree_elem* next) {
-        if(value == next->value)
-            return next;
-        if(value < next->value) {
-            if(next->left != NULL)
-                return find(value, next->left);
-        }
-        else {
-            if(next->right != NULL)
-                return find(value, next->right);
-        }
-        return NULL;
-    }
-
     void print(struct tree_elem* next) {
         cout << next->value << " ";
         if(next->left != NULL)
@@ -78,7 +64,19 @@ private:
         find_right_NULL(next->right);
     }
 
-
+    struct tree_elem* find(int value, struct tree_elem* next) {
+        if(value == next->value)
+            return next;
+        if(value < next->value) {
+            if(next->left != NULL)
+                return find(value, next->left);
+        }
+        else {
+            if(next->right != NULL)
+                return find(value, next->right);
+        }
+        return NULL;
+    }
 public:
     SimpleTree() { root = NULL; }
 
